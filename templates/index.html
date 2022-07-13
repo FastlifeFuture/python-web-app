@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Power Equipment Site Audit</h2>
+<p>Fill out the following categories to complete this form</p>
+<ul>
+    <li>General Info</li>
+    <li>Power System Uninstalled</li>
+    <li>Power System Installed</li>
+    <li>Battieries Uninstalled</li>
+    <li>Batteries Installed</li>
+</ul>
+ <form action="/submit" method = "POST">
+     <br>
+     <h3>General Info</h3>
+     <div>
+        <label for="installer">Installer:</label>
+        <input type="text" name="installer" id = "date" placeholder = "Installer" required>
+       </div>
+     <div>
+      <label for="date">Date:</label>
+      <input type="date" name="date" min="2022-05-02" id = "date" required>
+     </div>
+     <div>  
+         <label for="region">Region:</label>
+         <input type="text" name="region" id="region" placeholder="Region" required> 
+     </div>
+     <div>  
+      <label for="site name">Site Name:</label>
+      <input type="text" name="site name" id="site name" placeholder="Site Name" required> 
+     </div>
+     <div>  
+         <label for="site number">Site Number:</label>
+         <input type="number" name="site number" id="site number" placeholder="Site Number" required> 
+     </div>
+
+     <div>  
+         <label for="type">Type:</label>
+         <input type="text" name="type" id="type" placeholder="Type" required> 
+     </div>
+     <div>  
+         <label for="address">Address:</label>
+         <input type="text" name="address" id="address" placeholder="Address" required> 
+     </div>
+     <div>  
+         <label for="city">City:</label>
+         <input type="text" name="city" id="city" placeholder="City" required> 
+      </div>
+      <div>  
+         <label for="county">County:</label>
+         <input type="text" name="county" id="county" placeholder="County" required> 
+     </div>
+     <div>  
+         <label for="region">State:</label>
+         <input type="text" name="state" id="state" placeholder="State" required> 
+     </div>
+     <div>  
+         <label for="zip code">Zip Code:</label>
+         <input type="number" name="zip code" id="zip code" placeholder="Zip Code" required> 
+     </div>
+     <br>
+     <h3>Power System Uninstalled</h3>
+     <div>  
+         <label for="24v power system b">24V Power System Model:</label>
+         <input type="text" name="24v power system b" id="24v power system b" placeholder="24V Power System Model" required> 
+     </div>
+     <div>  
+         <label for="q&s of rects/conv 24 b">Quantity & Size of Rectifiers/Converters (24):</label>
+         <input type="text" name="q&s of rects/conv 24 b" id="q&s of rects/conv 24 b" placeholder="Quantity & Size of Rectifiers/Converters (24)" required> 
+     </div>
+     <div>  
+         <label for="t 24v load cap b">Total 24V Load Capacity (Amps):</label>
+         <input type="text" name="t 24v load cap b" id="t 24v load cape b" placeholder="Total 24V Load Capacity (Amps)" required> 
+     </div>
+     <div>  
+         <label for="e 24v load current b">Existing 24V Load Current (Amps):</label>
+         <input type="text" name="e 24v load current b" id="e 24v load current b" placeholder="Existing 24V Load Current (Amps)" required> 
+     </div>
+     <div>  
+         <label for="avail 24v dist b">Available 24V distribution positions:</label>
+         <input type="text" name="avail 24v dist b" id="avail 24v dist b" placeholder="Available 24V distribution positions" required> 
+     </div>
+     <div>  
+         <label for="48v power system model b">48V Power System Model:</label>
+         <input type="text" name="48v power system model b" id="48v power system model b" placeholder="48V Power System Model" required> 
+     </div>
+     <div>  
+         <label for="q&s of rects/conv 48 b">Quantity & Size of Rectifiers/Converters:</label>
+         <input type="text" name="q&s of rects/conv 48 b" id="q&s of rects/conv 48 b" placeholder="Quantity & Size of Rectifiers/Converters b" required> 
+     </div>
+     <div>  
+         <label for="t 48v load cap b">Total 48V Load Capacity (Amps):</label>
+         <input type="text" name="t 48v load cap b" id="t 48v load cap b" placeholder="Total 48V Load Capacity (Amps)" required> 
+     </div>
+     <div>  
+         <label for="e 48v load current b">Existing 48V Load Current (Amps):</label>
+         <input type="text" name="e 48v load current b" id="e 48v load current b" placeholder="Existing 48V Load Current (Amps)" required> 
+     </div>
+     <div>  
+         <label for="avail 48v dist b">Available 48V distribution positions:</label>
+         <input type="text" name="avail 48v dist b" id="avail 48v dist b" placeholder="Available 48V distribution positions" required> 
+     </div>
+     <br>
+     <h3>Power System Installed</h3>
+     <div>  
+         <label for="24v power system a">24V Power System Model:</label>
+         <input type="text" name="24v power system a" id="24v power system a" placeholder="24V Power System Model" required> 
+     </div>
+     <div>  
+         <label for="q&s of rects/conv 24 a">Quantity & Size of Rectifiers/Converters (24):</label>
+         <input type="text" name="q&s of rects/conv 24 a" id="q&s of rects/conv 24 a" placeholder="Quantity & Size of Rectifiers/Converters (24)" required> 
+     </div>
+     <div>  
+         <label for="t 24v load cap a">Total 24V Load Capacity (Amps):</label>
+         <input type="text" name="t 24v load cap a" id="t 24v load cap a" placeholder="Total 24V Load Capacity (Amps)" required> 
+     </div>
+     <div>  
+         <label for="e 24v load curren a">Existing 24V Load Current (Amps):</label>
+         <input type="text" name="e 24v load curren a" id="e 24v load curren a" placeholder="Existing 24V Load Current (Amps)" required> 
+     </div>
+     <div>  
+         <label for="avail 24v dist a">Available 24V distribution positions:</label>
+         <input type="text" name="avail 24v dist a" id="avail 24v dist a" placeholder="Available 24V distribution positions" required> 
+     </div>
+     <div>  
+         <label for="48v power system model a">48V Power System Model:</label>
+         <input type="text" name="48v power system model a" id="48v power system model a" placeholder="48V Power System Model" required> 
+     </div>
+     <div>  
+         <label for="q&s of rects/conv 48 a">Quantity & Size of Rectifiers/Converters:</label>
+         <input type="text" name="q&s of rects/conv 48 a" id="q&s of rects/conv 48 a" placeholder="Quantity & Size of Rectifiers/Converters" required> 
+     </div>
+     <div>  
+         <label for="t 48v load cap a">Total 48V Load Capacity (Amps):</label>
+         <input type="text" name="t 48v load cap a" id="t 48v load cap a" placeholder="Total 48V Load Capacity (Amps)" required> 
+     </div>
+     <div>  
+         <label for="e 48v load current a">Existing 48V Load Current (Amps):</label>
+         <input type="text" name="e 48v load current a" id="e 48v load current a" placeholder="Existing 48V Load Current (Amps)" required> 
+     </div>
+     <div>  
+         <label for="avail 48v dist a">Available 48V distribution positions:</label>
+         <input type="text" name="avail 48v dist a" id="avail 48v dist a" placeholder="Available 48V distribution positions" required> 
+     </div>
+     <br>
+
+     <h3>Battieries Uninstalled</h3>
+     <div>  
+         <label for="manufacturer b">Manufacture:</label>
+         <input type="text" name="manufacturer b" id="manufacturer b" placeholder="Manufacture" required> 
+     </div>
+     <div>  
+         <label for="type/model b">Type/Model:</label>
+         <input type="text" name="type/model b" id="type/model b" placeholder="Type/Model" required> 
+     </div>
+     <div>  
+         <label for="sufuric or gel type b">Selfuric or Gel Type:</label>
+         <input type="text" name="sufuric or gel type b" id="sufuric or gel type b" placeholder="Selfuric or Gel Type" required> 
+     </div>
+     <div>  
+         <label for="# of batteries b"># of Batteries:</label>
+         <input type="text" name="# of batteries b" id="# of batteries b" placeholder="# of Batteries" required> 
+     </div>
+     <div>  
+         <label for="# of cells b"># of Cells:</label>
+         <input type="text" name="# of cells b" id="# of cells b" placeholder="# of Cells" required> 
+     </div>
+     <div>  
+         <label for="Run time b">Run time based existing load (hours):</label>
+         <input type="date" name="Run time b" min="2022-05-02" id="Run time b" placeholder="Run time based existing load (hours)" required> 
+     </div>
+     <br>
+     <h3>Batteries Installed</h3>
+     <div>  
+         <label for="manufacturer a">Manufacture:</label>
+         <input type="text" name="manufacturer a" id="manufacturer a" placeholder="Manufacture" required> 
+     </div>
+     <div>  
+         <label for="type/model a">Type/Model:</label>
+         <input type="text" name="type/model a" id="type/model a" placeholder="Type/Model" required> 
+     </div>
+     <div>  
+         <label for="sufuric or gel type a">Selfuric or Gel Type:</label>
+         <input type="text" name="sufuric or gel type a" id="sufuric or gel type a" placeholder="Selfuric or Gel Type" required> 
+     </div>
+     <div>  
+         <label for="# of batteries a"># of Batteries:</label>
+         <input type="text" name="# of batteries a" id="# of batteries a" placeholder="# of Batteries" required> 
+     </div>
+     <div>  
+         <label for="# of cells a"># of Cells:</label>
+         <input type="text" name="# of cells a" id="# of cells a" placeholder="# of Cells" required> 
+     </div>
+     <div>  
+         <label for="Run time a">Run time based existing load (hours):</label>
+         <input type="date" name="Run time a" min="2022-05-02" id="Run time a" placeholder="Run time based existing load (hours)" required> 
+     </div>
+
+     <button type = "reset">Reset</button>
+     <button>Submit</button>
+     
+
+ </form>
+</body>
+</html>
