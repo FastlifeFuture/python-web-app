@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
+from send_mail import send_mail
+from write_excel import write_excel
 
 app = Flask(__name__)
 
@@ -175,8 +177,8 @@ def submit():
         data = Pesa(installer, date, region, site_name, site_number, type, address, city, county, state, zip_code, s_power_system_b, s_rects_conv_b, s_load_cap_b, s_load_current_b, s_dist_b, b_power_system_b, b_rects_conv_b, b_load_cap_b, b_load_current_b, b_dist_b, s_power_system_a, s_rects_conv_a, s_load_cap_a, s_load_current_a, s_dist_a, b_power_system_a, b_rects_conv_a, b_load_cap_a, b_load_current_a, b_dist_a, manufacturer_b, type_model_b, Sulf_gel_b, batteries_b, cells_b, runtime_b, manufacturer_a, type_model_a, Sulf_gel_a, batteries_a, cells_a, runtime_a)
 
         db.session.add(data)
-        # send_mail(installer, date, region, site_name, site_number, type,address,city, county, state, zip_code, s_power_system_b, s_rects_conv_b, s_load_cap_b, s_load_current_b, s_dist_b, b_power_system_b, b_rects_conv_b, b_load_cap_b, b_load_current_b, b_dist_b, s_power_system_a, s_rects_conv_a, s_load_cap_a, s_load_current_a, s_dist_a, b_power_system_a, b_rects_conv_a, b_load_cap_a, b_load_current_a, b_dist_a, manufacturer_b, type_model_b, Sulf_gel_b, batteries_b, cells_b, runtime_b, manufacturer_a, type_model_a, Sulf_gel_a, batteries_a, cells_a, runtime_a)
-        # write_excel(date, region, site_name, site_number, type,address,city, county, state, zip_code, s_power_system_b, s_rects_conv_b, s_load_cap_b, s_load_current_b, s_dist_b, b_power_system_b, b_rects_conv_b, b_load_cap_b, b_load_current_b, b_dist_b, s_power_system_a, s_rects_conv_a, s_load_cap_a, s_load_current_a, s_dist_a, b_power_system_a, b_rects_conv_a, b_load_cap_a, b_load_current_a, b_dist_a, manufacturer_b, type_model_b, Sulf_gel_b, batteries_b, cells_b, runtime_b, manufacturer_a, type_model_a, Sulf_gel_a, batteries_a, cells_a, runtime_a)
+        send_mail(installer, date, region, site_name, site_number, type,address,city, county, state, zip_code, s_power_system_b, s_rects_conv_b, s_load_cap_b, s_load_current_b, s_dist_b, b_power_system_b, b_rects_conv_b, b_load_cap_b, b_load_current_b, b_dist_b, s_power_system_a, s_rects_conv_a, s_load_cap_a, s_load_current_a, s_dist_a, b_power_system_a, b_rects_conv_a, b_load_cap_a, b_load_current_a, b_dist_a, manufacturer_b, type_model_b, Sulf_gel_b, batteries_b, cells_b, runtime_b, manufacturer_a, type_model_a, Sulf_gel_a, batteries_a, cells_a, runtime_a)
+        write_excel(date, region, site_name, site_number, type,address,city, county, state, zip_code, s_power_system_b, s_rects_conv_b, s_load_cap_b, s_load_current_b, s_dist_b, b_power_system_b, b_rects_conv_b, b_load_cap_b, b_load_current_b, b_dist_b, s_power_system_a, s_rects_conv_a, s_load_cap_a, s_load_current_a, s_dist_a, b_power_system_a, b_rects_conv_a, b_load_cap_a, b_load_current_a, b_dist_a, manufacturer_b, type_model_b, Sulf_gel_b, batteries_b, cells_b, runtime_b, manufacturer_a, type_model_a, Sulf_gel_a, batteries_a, cells_a, runtime_a)
         db.session.commit()
 
         return render_template('success.html')
